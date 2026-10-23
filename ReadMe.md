@@ -45,6 +45,7 @@ At the time of writing the folder includes `Generic.buttonMap`, which has every 
 | Thrustmaster T.16000M| T16000M.buttonMap |
 | Thrustmaster TWCS| T16000MTHROTTLE.buttonMap |
 | TurtleBeach VelocityOne FlightStick| 10F57055.buttonMap |
+| Virpil Virpil CDT-AEROMAX-R Flightstick| 334444C4.buttonMap |
 | Virpil Universal Control Panel #2| 3344025A.buttonMap |
 | VKB Gladiator NXT EVO Space Combat Grip Premium (Left)| 231D0201.buttonMap |
 | VKB Gladiator NXT EVO Space Combat Grip Premium (Right)| 231D0200.buttonMap |
@@ -53,6 +54,7 @@ At the time of writing the folder includes `Generic.buttonMap`, which has every 
 | VKB Gladiator NXT EVO Space Combat Grip Premium (Right) + GNX FSM/GA module| 231D0220.buttonMap |
 | VKB Gunfighter Space Combat Grip Premium (Right)| 231D0126.buttonMap |
 | VKB STECS Modern Throttle System Standard| 231D012D.buttonMap |
+| VKB STECS Modern Throttle System MAX| 231D012E.buttonMap |
 | VKB STECS Regular Throttle System Mini Plus (Left)| 231D012C.buttonMap |
 | VKB STECS Space Throttle Grip Max (Left)| 231D0139.buttonMap |
 | VKB STECS Space Throttle Grip Mini (Left)| 231D0136.buttonMap |
@@ -82,7 +84,13 @@ Before you can create custom button labels for your devices, you need to identif
 
 To create your own button labels, start by copying `Generic.buttonMap` to a new file. Change the name of the file to match the device name for the controller you want to customize (e.g. `T16000MTHROTTLE.buttonMap` for device name `T16000MTHROTTLE`). 
 
-Open the file and edit the names and icons as you wish. You can refer to the `Readme.txt` in the `ControlSchemes\DeviceButtonMaps` folder for a list of available icons. Save your changes.
+Open the file and edit the names and icons as you wish. You can refer to the `Readme.txt` in the `ControlSchemes\DeviceButtonMaps` folder for a list of available icons. 
+
+Entries for any input that the device in question does not have can safely be deleted, and I recommend doing that so as to keep the resulting file concise. For example, few devices have more than one POV hat, but `Generic.buttonMap` describes all possible four of them. Go ahead and delete the unused ones.
+
+That said, an entry for an unused input will not cause any error, it will just never be referenced.
+
+When you are done, save your changes.
 
 Update: CMDR NutBall has very kindly compiled a preview sheet of all the available icons [here](https://cmdr-nutball.github.io/Elite-Dangerous-buttonmap-Icons/).
 
